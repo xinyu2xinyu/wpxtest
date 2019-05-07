@@ -1,0 +1,7 @@
+1、py转成exe文件
+   进入cmd命令行输入命令: pip install pyinstaller ，安装完后输入命令 pyinstaller –version 查看是否安装成功，切换到目录 cd /d 文件路径，使用命令
+   pyinstaller -F 你的文件名.py
+   
+   让输出的界面停留，增加以下代码：
+   import code
+   code.interact(banner = "", local = locals())
